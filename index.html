@@ -1,232 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="author" content="Jodak Web Solutions">
-    <!--<link rel="icon" href="../../favicon.ico">-->
+    <meta name="author" content="">
 
-    <title>Posh Patio</title>
+    <title>Landing Page - Start Bootstrap Theme</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/site.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
-<!--Navigation-->
-<div class="wrapper">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">P<span class="small">osh</span>P<span class="small">atio</span>.ca</a>
+                <a class="navbar-brand topnav" href="#">Start Bootstrap</a>
             </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Cathedral Patio Covers</a></li>
-                            <li><a href="#">Classic Patio Covers</a></li>
-                            <li><a href="#">Freestanding Patio Covers</a></li>
-                            <li><a href="#">Pergola Covers</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Glass Rooms</a></li>
-                            <li><a href="#">Outdoor Walls</a></li>
-                            <li><a href="#">Screen Rooms</a></li>
-                            <li><a href="#">Spa Enclosures</a></li>
-                        </ul>
-                    <li><a href="#">Benefits</a></li>
-                    <li><a href="#">The Technology</a></li>
-                    <li><a href="#"> The Company</a></li>
-                    <li><a href="#"> Contact</a></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-
-                </ul>
             </div>
+        <!-- /.navbar-collapse -->
         </div>
+    <!-- /.container -->
     </nav>
 
-    <!--Carousel-->
+
+<!-- Header -->
+<a name="about"></a>
+
+<div class="intro-header">
     <div class="container">
+
         <div class="row">
-            <div id="carousel" class="col-lg-12">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="http://danvillerealestateforsale.com/wp-content/uploads/2013/10/slide_3.jpg"
-                                 alt="...">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>Landing Page</h1>
 
-                            <div class="carousel-caption">
-                                Example 1
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="http://danvillerealestateforsale.com/wp-content/uploads/2013/10/slide3.jpg"
-                                 alt="...">
-
-                            <div class="carousel-caption">
-                                Example 2
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="http://danvillerealestateforsale.com/wp-content/uploads/2013/10/slide_4.jpg"
-                                 alt="...">
-
-                            <div class="carousel-caption">
-                                Example 3
-                            </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
-                           data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
-                           data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                    <h3>A Template by Start Bootstrap</h3>
+                    <hr class="intro-divider">
+                    <ul class="list-inline intro-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i
+                                    class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/IronSummitMedia/startbootstrap"
+                               class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span
+                                    class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
+                                    class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
                     </div>
                 </div>
             </div>
+
         </div>
+    <!-- /.container -->
+
     </div>
-    <br>
+<!-- /.intro-header -->
+
+<!-- Page Content -->
+
+<a name="services"></a>
+
+<div class="content-section-a">
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <h2>Create your own outdoor oasis!</h2>
-                <hr>
-                <p>Posh Patio Deck Covers is Saskatchewan’s exclusive dealer for Natural Light Patio Covers.</p>
-            </div>
-            <div class="col-md-4 hidden-sm hidden-xs">
-                <img class="img-responsive img-rounded" src="http://i.imgur.com/1Nd95m8.jpg">
-            </div>
-            <div class="col-md-8 col-xs-12">
-                <p class="text-justify">Natural Light Patio Covers bring the sun and shade together by blocking the
-                    sun’s
-                    harmful rays and protecting your family from the elements. Now you can expand your outdoor space
-                    without
-                    diminishing the wonderful, life-enhancing effects of natural sunlight! The ACRYLITE® sheeting
-                    creates a
-                    soft and radiant sunlit glow while reflecting heat and blocking 100% of the harmful UV rays.
-                    Even rooms
-                    adjacent to your Natural Light Patio Cover are brighter and more enjoyable! With a wide variety
-                    of
-                    applications and sheeting options your Natural Light Patio Covers can be fully customized to
-                    suit a
-                    broad variety of exterior applications, including patio and deck covers, pool and hot tub
-                    enclosures,
-                    carports, sunrooms and even hobby greenhouses. We offer exceptional services and offer a
-                    comprehensive
-                    30-year warranty to back up our ACRYLITE® products and installation. <strong>Natural Light Patio
-                        Covers
-                        are a great environmental choice:</strong></p>
-                <ul>
-                    <li>All materials used for our products are 100% recyclable.</li>
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
 
-                    <li>Our structures are built to last, so they will not end up in the landfill.</li>
+                <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death
+                    to the Stock Photo</a> for providing the photographs that you see in this template. Visit their
+                    website to become a member.</p>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="img-responsive" src="img/ipad.png" alt="">
+            </div>
+            </div>
 
-                    <li>Our warehouse is fully powered by our own wind turbine for a reduced carbon footprint.</li>
+        </div>
+    <!-- /.container -->
+
+    </div>
+<!-- /.content-section-a -->
+
+<div class="content-section-b">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
+
+                <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop
+                    actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to
+                    download some of their awesome, free photoshop actions!</p>
+            </div>
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <img class="img-responsive" src="img/dog.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.content-section-b -->
+
+<div class="content-section-a">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
+
+                <p class="lead">This template features the 'Lato' font, part of the <a target="_blank"
+                                                                                       href="http://www.google.com/fonts">Google
+                    Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font
+                    Awesome</a>.</p>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="img-responsive" src="img/phones.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.content-section-a -->
+
+<a name="contact"></a>
+
+<div class="banner">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Connect to Start Bootstrap:</h2>
+            </div>
+            <div class="col-lg-6">
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i
+                                class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i
+                                class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
+                                class="network-name">Linkedin</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
-    <br>
 
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.banner -->
+
+<!-- Footer -->
+<footer>
     <div class="container">
         <div class="row">
-            <section id="contact" class="content-section text-center col-lg-12">
-                <h2 class="text-justify">We would love to hear from <strong>YOU!</strong></h2>
-                <hr/>
-
-                <form class="row">
-                    <div class="col-lg-6">
-                        <input name="FirstName" type="text" placeholder="First Name" class="form-control">
-                    </div>
-                    <div class="col-lg-6">
-                        <input name="Email" type="email" placeholder="Email Address" class="form-control">
-                    </div>
-                    <div class="col-lg-12">
-                            <textarea name="Message" placeholder="Your message..."
-                                      class="form-control" style="resize: vertical;"></textarea>
-                    </div>
-                    <div class="col-lg-12">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send Message
-                        </button>
-                    </div>
-                </form>
-            </section>
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+            </div>
         </div>
     </div>
-</div>
+</footer>
 
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-<script src="js/jquery-2.1.4.js" type="text/javascript"></script>
-<script src="js/bootstrap.js" type="text/javascript"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
