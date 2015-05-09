@@ -799,7 +799,7 @@ if (typeof jQuery === 'undefined') {
 
             $parent
                 .toggleClass('open')
-                .trigger('shown.bs.dropdown', relatedTarget)
+                .trigger('shown.bs.dropdown', relatedTarget);
         }
 
         return false
