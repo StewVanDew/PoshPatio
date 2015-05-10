@@ -1,0 +1,22 @@
+div.fixed-quote {
+    position: fixed;
+    top: 65px;
+    margin-left: 10px;
+}
+
+.responsive-quote {
+    font-size: 1.25vw;
+}
+
+.intro-header-no-bg {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background-size: cover !important;
+}
+
+img.product-thumbnail {
+    cursor: pointer;
+    width: 15vw;
+}
