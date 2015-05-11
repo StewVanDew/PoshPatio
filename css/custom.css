@@ -20,3 +20,14 @@ img.product-thumbnail {
     cursor: pointer;
     width: 15vw;
 }
+
+div.product-images {
+    position: relative;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top {
+    z-index: 999;
+}
