@@ -18,16 +18,38 @@ div.fixed-quote {
 
 img.product-thumbnail {
     cursor: pointer;
-    width: 15vw;
+    max-height: 19vh;
+    width: auto;
 }
 
 div.product-images {
+    height: 25vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
     position: relative;
     white-space: nowrap;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
 .top {
     z-index: 999;
+}
+
+html, body {
+    height: 100%;
+}
+
+.carousel, .item, .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100% !important;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
