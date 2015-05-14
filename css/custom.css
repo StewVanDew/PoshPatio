@@ -58,9 +58,16 @@ html, body {
     margin: 0;
 }
 .navbar-brand img{
-    max-height: 150%;
+    max-height: 125%;
 }
 
 .contact-cont{
     padding-top: 50px;
+}
+.content-section-c{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.brand-logo{
+    padding-top: 4px;
 }
