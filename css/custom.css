@@ -53,3 +53,14 @@ html, body {
     background-position: center;
     background-size: cover;
 }
+.navbar-brand {
+    padding-top: 0;
+    margin: 0;
+}
+.navbar-brand img{
+    max-height: 150%;
+}
+
+.contact-cont{
+    padding-top: 50px;
+}
