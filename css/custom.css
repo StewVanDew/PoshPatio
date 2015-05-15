@@ -61,21 +61,33 @@ html, body {
     background-position: center;
     background-size: cover;
 }
+
 .navbar-brand {
     padding-top: 0;
     margin: 0;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     max-height: 125%;
 }
 
-.contact-cont{
+.contact-cont {
     padding-top: 50px;
 }
-.content-section-c{
+
+.content-section-c {
     padding-bottom: 50px;
     padding-top: 50px;
 }
-.brand-logo{
+
+.brand-logo {
     padding-top: 4px;
+}
+
+.topnav > img {
+    padding-top: 5px;
+}
+
+.contact > div {
+    padding: 6px 12px;
 }
