@@ -30,9 +30,17 @@ div.product-images {
     white-space: nowrap;
     padding: 10px;
 }
-
 .top {
     z-index: 999;
+}
+.quote-btn{
+    background-color: #408F92;
+    color: #f5f5f5;
+    border: 2px solid rgba(0,0,0,0.5);
+}
+.quote-btn:hover{
+    color: solid ;
+    background-color: #408F92;
 }
 
 html, body {
