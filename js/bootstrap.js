@@ -45,7 +45,7 @@ if (typeof jQuery === 'undefined') {
             if (el.style[name] !== undefined) {
                 return {end: transEndEventNames[name]}
             }
-    }
+        }
 
         return false; // explicit for ie8 (  ._.)
     }
@@ -532,7 +532,7 @@ if (typeof jQuery === 'undefined') {
         $('[data-ride="carousel"]').each(function () {
             var $carousel = $(this);
             Plugin.call($carousel, $carousel.data())
-    })
+        })
     })
 
 }(jQuery);
@@ -1060,7 +1060,7 @@ if (typeof jQuery === 'undefined') {
             .on('focusin.bs.modal', $.proxy(function (e) {
                 if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
                     this.$element.trigger('focus')
-        }
+                }
             }, this))
     };
 
@@ -2012,7 +2012,7 @@ if (typeof jQuery === 'undefined') {
         $('[data-spy="scroll"]').each(function () {
             var $spy = $(this);
             Plugin.call($spy, $spy.data())
-    })
+        })
     })
 
 }(jQuery);
@@ -2329,7 +2329,7 @@ if (typeof jQuery === 'undefined') {
             if (data.offsetTop != null) data.offset.top = data.offsetTop;
 
             Plugin.call($spy, data)
-    })
+        })
     })
 
 }(jQuery);

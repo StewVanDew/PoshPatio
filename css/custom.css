@@ -6,6 +6,7 @@ div.fixed-quote {
 
 .responsive-quote {
     font-size: 1.25vw;
+    padding: 25px 5px;
 }
 
 .intro-header-no-bg {
