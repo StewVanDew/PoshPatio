@@ -109,7 +109,9 @@
                                class="form-control" required onkeyup="validate()">
                     </div>
                     <div class="col-lg-12">
-                        <select name="Subject" class="form-control" required>
+                        <label for="Subject" class="h3">Select all that apply (Ctrl + Click to select more than one)</label>
+                        <select multiple name="Subject" id="Subject" class="form-control" required>
+                            <option value="Support" selected>Support</option>
                             <option value="Balcony Enclosures">Balcony Enclosures</option>
                             <option value="Decking Aluminum">Decking Aluminum</option>
                             <option value="Folding Glass Walls">Folding Glass Walls</option>
@@ -118,8 +120,16 @@
                             <option value="Screen Rooms">Screen Rooms</option>
                             <option value="Screen Walls">Screen Walls</option>
                             <option value="Sun Rooms">Sun Rooms</option>
-                            <option value="Support">Support</option>
                         </select>
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Balcony Enclosures" class="checkbox" />Balcony Enclosures</label>-->
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Decking Aluminum" class="checkbox" />Decking Aluminum</label>-->
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Folding Glass Walls" class="checkbox" />Folding Glass Walls</label>-->
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Patio Covers" class="checkbox" />Patio Covers</label>-->
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Railing Systems" class="checkbox" />Railing Systems</label>-->
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Screen Rooms" class="checkbox" />Screen Rooms</label>-->
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Screen Walls" class="checkbox" />Screen Walls</label>-->
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Sun Rooms" class="checkbox" />Sun Rooms</label>-->
+                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Support" class="checkbox" />Support</label>-->
                     </div>
                     <div class="col-lg-12 has-error" id="divPhone">
                         <input id="phone" name="PhoneNumber" type="text"
