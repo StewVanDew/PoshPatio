@@ -2314,6 +2314,14 @@ if (typeof jQuery === 'undefined') {
         return this
     };
 
+    // JUSTIFY TEXT ON SMALL
+    // =====================
+    if ($(document).width() < 768) {
+        $('p').addClass('text-justify');
+    } else {
+        $('p').removeClass('text-justify');
+    }
+
 
     // AFFIX DATA-API
     // ==============
