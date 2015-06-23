@@ -36,6 +36,10 @@ div.product-images {
     z-index: 999;
 }
 
+.navbar-right img {
+    height: 100px;
+}
+
 .fixed-quote > a,
 .fixed-quote > a:focus,
 #banner > a,
