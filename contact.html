@@ -89,22 +89,23 @@
                 <h1>Contact Us</h1>
 
                 <h3>We look forward to hearing from you</h3>
+                <h3 id="success" class="alert-success well text-center" style="display: none;">Message Successfully Sent!</h3>
 
                 <p>Patio covers are installed in many different settings, and we look forward to working with you to
                     take your backyard to the next level! In order to help you when you call, we’ll likely be asking you
                     a few questions.
-                    <h4>Consider the following:</h4>
-                    <ul>
-                        <li>Will you be attaching the cover to the house? Bungalow or two-storey?</li>
-                        <li>What is the wall material?</li>
-                        <li>Will you be installing the cover on a deck or a patio?</li>
-                        <li>If it is a deck, what is the deck mounted to or on?</li>
-                        <li>What is the size you would like to cover?</li>
-                        <li>When would you like to have the cover installed?</li>
-                    </ul>
+                <h4>Consider the following:</h4>
+                <ul>
+                    <li>Will you be attaching the cover to the house? Bungalow or two-storey?</li>
+                    <li>What is the wall material?</li>
+                    <li>Will you be installing the cover on a deck or a patio?</li>
+                    <li>If it is a deck, what is the deck mounted to or on?</li>
+                    <li>What is the size you would like to cover?</li>
+                    <li>When would you like to have the cover installed?</li>
+                </ul>
                 </p>
 
-                <form class="row contact" action="conatct.php">
+                <form class="row contact" action="conatct.php" method="post">
                     <div class="col-sm-6 has-error" id="divName">
                         <input id="name" name="Name" type="text" placeholder="Name (required, at least 2 characters)"
                                class="form-control" required onkeyup="validate()">
@@ -116,7 +117,7 @@
                     <div class="col-lg-12">
                         <label for="Subject" class="h4">Select all that apply <strong>(Ctrl + Click to select more than
                             one)</strong></label>
-                        <select multiple name="Subject" id="Subject" class="form-control" title="Ctrl + Click to select more than one option" required>
+                        <select multiple name="Subject[]" id="Subject" class="form-control" title="Ctrl + Click to select more than one option" required>
                             <option value="Support" selected>Support</option>
                             <option value="Balcony Enclosures">Balcony Enclosures</option>
                             <option value="Decking Aluminum">Decking Aluminum</option>
@@ -127,15 +128,6 @@
                             <option value="Screen Walls">Screen Walls</option>
                             <option value="Sun Rooms">Sun Rooms</option>
                         </select>
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Balcony Enclosures" class="checkbox" />Balcony Enclosures</label>-->
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Decking Aluminum" class="checkbox" />Decking Aluminum</label>-->
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Folding Glass Walls" class="checkbox" />Folding Glass Walls</label>-->
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Patio Covers" class="checkbox" />Patio Covers</label>-->
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Railing Systems" class="checkbox" />Railing Systems</label>-->
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Screen Rooms" class="checkbox" />Screen Rooms</label>-->
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Screen Walls" class="checkbox" />Screen Walls</label>-->
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Sun Rooms" class="checkbox" />Sun Rooms</label>-->
-                        <!--<label class="checkbox-inline"><input type="checkbox" name="subject[]" value="Support" class="checkbox" />Support</label>-->
                     </div>
                     <div class="col-lg-12 has-error" id="divPhone">
                         <input id="phone" name="PhoneNumber" type="text"
@@ -234,50 +226,11 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.js"></script>
 <script>
-    function validate() {
-        function validEmail(email) {
-            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-            return regex.test(email);
-        }
-
-        var name = $('#name').val();
-        var email = $('#email').val();
-        var phone = $('#phone').val();
-        var message = $('#message').val();
-
-        var divName = $('#divName');
-        var divEmail = $('#divEmail');
-        var divPhone = $('#divPhone');
-        var divMessage = $('#divMessage');
-
-        if (name.length <= 1) {
-            divName.removeClass('has-success');
-            divName.addClass('has-error');
-        } else {
-            divName.removeClass('has-error');
-            divName.addClass('has-success');
-        }
-        if (!validEmail(email)) {
-            divEmail.closest('div').removeClass('has-success');
-            divEmail.closest('div').addClass('has-error');
-        } else {
-            divEmail.closest('div').removeClass('has-error');
-            divEmail.closest('div').addClass('has-success');
-        }
-        if (phone.length < 10 || phone.length > 10) {
-            divPhone.closest('div').removeClass('has-success');
-            divPhone.closest('div').addClass('has-error');
-        } else {
-            divPhone.closest('div').removeClass('has-error');
-            divPhone.closest('div').addClass('has-success');
-        }
-        if (message.length < 10 || message.length > 500) {
-            divMessage.closest('div').removeClass('has-success');
-            divMessage.closest('div').addClass('has-error');
-        } else {
-            divMessage.closest('div').removeClass('has-error');
-            divMessage.closest('div').addClass('has-success');
-        }
+    var url = window.location.href;
+    if (url.indexOf("true") >= 1) {
+        $('#success').show();
+    } else {
+        $('#success').hide();
     }
 </script>
 
